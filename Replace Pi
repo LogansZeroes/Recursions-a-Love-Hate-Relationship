@@ -1,0 +1,9 @@
+function replacePi(string) { 
+
+  string = string.replace('pi', '3.14');
+
+  if ( string.match(/pi/)) return replacePi(string);
+
+  return string; 
+
+}
